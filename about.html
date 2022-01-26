@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="University Website, School Website">
+    <meta name="keywords" content="University Website, Website Design, School Website, University Template,
+    College University">
+    <meta name="author" content="Dash">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./web-fonts-with-css/css/fontawesome-all.min.css">  
+</head>
+<body>
+    <header>
+        <div class="about-header-wrapper">
+            <div class="about-header-main">
+                <div class="about-header-logo">
+                    <a href="index.html"><img src="eduford_img/logo.png" alt="Eduford Logo"></a>
+                </div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="navLinks" id="navLinks">
+                            <i class="fa fa-times" onclick="hideMenu()"></i>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="course.html">Course</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        <i class="fa fa-bars" onclick="showMenu()"></i>
+                    </nav>
+                </div>
+            </div>
+            <h1>About Us</h1>
+        </div>
+    </header>
+
+    <!--About Us Contents-->
+    <!--About Us Section-->
+    <section>
+        <div class="about-us-section-wrapper">
+            <div class="about-us-main">
+                <div class="about-us-columns">
+                    <h1>We are the World's Largest University</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat tempore laudantium, eum nihil asperiores earum veniam quas. Dolor pariatur excepturi nesciunt ullam nisi illum reiciendis laborum, reprehenderit facere fuga, quibusdam nam at officiis perferendis fugiat inventore iste nobis, harum vel quasi. A voluptate omnis ullam quae cum, dignissimos quo.</p>
+                    <p></p>
+                    <a href="">Explore Now</a>
+                </div>
+                <div class="about-us-columns">
+                    <img src="./eduford_img/about.jpg" alt="About">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi officia, maiores quam esse temporibus. <br> Deleniti debitis quidem, voluptate unde quaerat ah.</p>
+            <div class="footer-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
+
+<!---- JavaScript for Toogle Menu ----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%"
+        }
+    </script>
+</body>
+</html>
